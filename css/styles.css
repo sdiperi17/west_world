@@ -47,21 +47,30 @@ table {
 	border-spacing: 0;
 }
 
+
+
 /* Global code */
 header h1 {
     font-family: 'Fredericka the Great', cursive;
-    background: black;
     color: white;
     text-align: center;
     font-size: 48px;
 }
+header {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding: 15px 0px;
+}
 .main-background {
-    background: url("../img/home.jpg");
+    background: url("../img/westworld-s1-1920x1080.jpg");
     background-size: cover;
     min-height: 90vh;
     margin-top: 10% 0%;
-    width: 50;
-    height: 50%;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
 }
 
 
