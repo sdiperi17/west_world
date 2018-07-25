@@ -127,6 +127,24 @@ header {
     background-color:  #5A6873;
 }
 
+.header-background {
+    background: url("../img/Wiki-background.jpg");
+    background-size: cover;
+    /* background-position: 100% 100%; */
+    background-repeat: no-repeat;
+    padding: 10% 10%;
+    height: 150px;
+
+
+}
+/* .header-gradient {
+    background: rgba(0,0,255,0.4);
+    position: absolute;
+    display: inline-block;
+} */
+
+
+
 /*main*/
 #main-home h3, #main-home p {
     display: inline-block;
