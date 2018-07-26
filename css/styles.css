@@ -134,9 +134,12 @@ header {
     background-repeat: no-repeat;
     padding: 10% 10%;
     height: 150px;
-
-
 }
+.about-text {
+    padding: 50px 0px;
+    margin: 0px;
+}
+
 /* .header-gradient {
     background: rgba(0,0,255,0.4);
     position: absolute;
@@ -178,7 +181,9 @@ header {
         display: inline-block;
         left: 25%;
 }
-
+.about-container {
+    padding: 0px 20px;
+}
  
 
 
