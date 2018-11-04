@@ -1,91 +1,183 @@
+/* CSS Browser default reset */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-
+/* ##################################################### My code ############################################### */
 
 /* Global code */
 
-html {
+/* html {
     box-sizing: border-box;
-}
+} */
 
+/* Title header on Home page */
 header h1 {
-    font-family: 'Fredericka the Great', cursive;
+    font-family: "Fredericka the Great", cursive;
     color: white;
     text-align: center;
-    font-size: 48px;
+    font-size: 3rem;
 }
 header {
-    background: rgba(0, 0, 0, 0.3);
-    position: absolute;
-    z-index: 1;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    z-index: 100;
     width: 100%;
     padding: 15px 0px;
+    top: 0;
 }
 .main-background {
     background: url("../img/westworld-s1-1920x1080.jpg");
     background-size: cover;
-    min-height: 90vh;
+    /* min-height: 90vh; */
     margin-top: 10% 0%;
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
 }
-.about-header
- {
+.about-header {
     background: black;
-} 
+}
 
-
-
-
-
+.box-container {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 2rem;
+    font-family: "Special Elite", cursive;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, 0);
+    width: 80vw;
+    text-align: center;
+}
 
 /* Header */
 .about {
@@ -109,13 +201,13 @@ header {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #3B444B;
-    box-shadow:0px 8px 16px 0px #e9e3d3;
+    background-color: #3b444b;
+    box-shadow: 0px 8px 16px 0px #e9e3d3;
     z-index: 1;
     width: 100%;
 }
 .dropdown-content a {
-    color: #DBE9F4;
+    color: #dbe9f4;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -123,13 +215,13 @@ header {
 .dropdown-content a:hover {
     background-color: rgba(255, 0, 0, 0.3);
 }
-                        
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
 .dropdown:hover .dropbtn {
-    background-color:  #5A6873;
+    background-color: #5a6873;
 }
 
 .header-background {
@@ -138,7 +230,7 @@ header {
     /* background-position: 100% 100%; */
     background-repeat: no-repeat;
     padding: 10% 10%;
-    height: 150px;
+    /* height: 150px; */
 }
 .about-text {
     padding: 50px 0px;
@@ -151,14 +243,13 @@ header {
     display: inline-block;
 } */
 
-
-
 /*main*/
-#main-home h3, #main-home p {
+#main-home h3,
+#main-home p {
     display: inline-block;
     color: white;
     width: 100%;
-    text-align: center;  
+    text-align: center;
     font-size: 24px;
 }
 
@@ -166,30 +257,32 @@ header {
     margin-top: 5.5%;
     margin-bottom: 10px;
 }
-#about-main-background {             
-    background: url("../img/beach.jpg");
+#about-main-background {
+    background: url("../img/transparent-bird.jpg");
     background-repeat: no-repeat, repeat;
     background-size: cover;
     margin-top: 20px 0px;
-    width: 100%;
-    height: 1000px;
+    width: 100vw;
+    min-height: 100vh;
     background-repeat: no-repeat;
     position: fixed;
 }
 .about-container {
-        position: absolute;
-        width: 50%;
-        background: rgba(0, 0, 0, 0.3);
-        color: white;
-        font-size: 2em;
-        margin: 100px 50px;
-        display: inline-block;
-        left: 25%;
+    position: relative;
+    width: 70vw;
+    min-height: 100vh;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 2em;
+    overflow-x: auto;
+    z-index: 10;
+    margin: 0 auto;
+    padding-top: 50px;
 }
-.about-container {
+/* .about-container {
     padding: 0px 20px;
-}
- 
+} */
+
 .grid-container {
     display: grid;
     grid-template-columns: 20% 20% 20% 20%;
@@ -198,66 +291,187 @@ header {
     grid-row-gap: 70px;
     justify-content: center;
     margin-top: 50px;
+    position: relative;
+    /* background: rgba(255, 255, 255, 0.3); */
 
     /* grid-gap: 10px; */
 }
 
 img {
     max-width: 100%;
-    border-radius: 60%;
 }
 
 .grid-item {
     border: 1px solid #222;
     text-align: center;
     box-shadow: 5px 10px 8px #888888;
+    background: white;
 }
 
 .floated {
     overflow: hidden;
 }
 .header-cast {
-    font-family: 'Bangers', cursive;
-    font-size: 48px;
+    font-family: "Bangers", cursive;
     text-align: center;
-    margin-top: 30px;
-    text-shadow: 2px 2px 35px	#A9A9A9;
-    color: black;
-    text-shadow: 4px 4px 0px rgba(63,107,169, 0.6);
+    margin-top: 100px;
+    text-shadow: 2px 2px 35px #a9a9a9;
+    color: white;
+    text-shadow: 4px 4px 0px rgba(63, 107, 169, 0.6);
+    /* padding-top: 100px; */
+    position: relative;
 }
 
 /* Footer */
 footer {
-    background: #C3C8CF;
+    background: rgba(0, 0, 0, 0.3);
     text-align: center;
-    position: static;
-    margin-bottom: 0%;
+    position: absolute;
     width: 100%;
-}
-footer h2, footer p, footer img {
-    padding: 5px;
-}
-.fa:hover {
-    opacity: 0.7
-}
-.fa-facebook {
-    background: #3B5998;
     color: white;
+    font-size: 1rem;
+    bottom: 0;
 }
-.fa-twitter {
-    background: #55ACEE;
+
+.about-page-footer {
+    display: block;
+    position: static;
+}
+
+.parent-container {
+    padding: 20px;
+    display: flex;
+    margin-bottom: 75px;
+    box-shadow: 3px 3px 3px white;
+    background: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.child-container {
+    flex: 1;
+    width: 200px;
+    min-height: 200px;
+    margin: 10px;
+}
+
+#text {
+    flex: 2;
+    /* border: none; */
+    line-height: 60px;
+}
+
+#image {
     color: white;
+    flex: 1;
+    border: none;
 }
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
+
+.header1 {
+    font-family: "Abril Fatface", cursive;
+    background: rgba(0, 51, 102, 0.4);
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px white;
+    font-size: 2rem;
+    margin-bottom: 40px;
 }
-.fa-pintrest {
-    background: #125688;
-    color: white;
+
+#about-page-footer {
+    background: rgba(0, 51, 102, 0.3);
+    box-shadow: 0px 0px 0px 1px white;
 }
-.fa-instagram {
-    background: #bb0000;
+
+.child img {
+    box-shadow: 3px 3px 3px white;
+}
+
+#cast-crew-page-menu {
+    background: rgba(0, 10, 0, 0.7);
+    font-family: "Fredericka the Great", cursive;
+}
+
+#cast-crew-page-footer {
+    position: relative;
+    grid-row-start: 6;
+    grid-column: 1 / 5;
+}
+
+.cast-crew-page-background {
+    background: rgb(12, 12, 79);
+}
+
+.bck {
+    background: url("../img/pic11.png");
+    background-size: cover;
+    /* min-height: 90vh; */
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    background-position: center;
+}
+
+.trailer-page-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.trailer-page-child {
+    margin: 30px;
+    /* border: 5px solid black; */
+    box-shadow: 5px 5px 5px black;
+}
+
+#trailer-page-h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Abril Fatface", cursive;
+    margin-top: 100px;
+    border: 2px solid;
+    box-shadow: 5px 5px 5px black;
+    animation: move-header 2s linear;
+    background: rgba(0, 51, 102, 1);
     color: white;
 }
 
+#trailer-page-footer {
+    position: relative;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.trailer-page-h2 {
+    font-family: "Candal", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px;
+}
+
+.trailer-page-child img {
+    margin: 0% auto;
+    display: block;
+}
+
+@keyframes move-header {
+    0% {
+        margin-left: -900px;
+        background: white;
+        color: black;
+    }
+    50% {
+        background: rgba(0, 51, 102, 0.7);
+        color: white;
+    }
+    100% {
+        margin-left: 0;
+        background: rgba(0, 51, 102, 1);
+    }
+}
+
+.active {
+    background: black;
+    color: white;
+}
